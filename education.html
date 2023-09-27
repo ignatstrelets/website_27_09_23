@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education | Ignat Strelets</title>
+    <link id='favicon' rel="shortcut icon" href="./assets/favicon.ico" type="image/x-png">
+</head>
+<style>
+    li {
+        display: inline;
+        float: left;
+        padding: 14px 16px;
+    }
+    .active {
+        text-decoration-color: chocolate;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+</style>
+<body>
+<header>
+    <ul>
+        <li><a href="index.html">Personal info</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a  class="active"  href="education.html">Education</a></li>
+        <li style="float:right"><a href="https://www.linkedin.com/in/ignat-strelets-568685259/">LinkedIn</a></li>
+        <li style="float:right"><a href="https://www.t.me/ignatstrelets">Telegram</a></li>
+        <li style="float:right"><a href="index.html/#contact">Contact</a></li>
+    </ul>
+</header>
+<br>
+<br>
+<br>
+<div>
+<h2>My education<br></h2>
+<br>
+</div>
+    <div class="row">
+        <div class="column">
+<figure>
+    <img src="assets/sdi.png"  style="width: 250px; height: 250px" alt="">
+    <figcaption>
+    Sound Design Institute.<br>Moscow<br>2021-2022<br>Sound Design&Engineering
+    </figcaption>
+
+
+</figure>
+        </div>
+        <div class="column">
+        <figure>
+        <img src="assets/hse.svg.png"  style="width: 250px; height: 250px" alt="">
+        <figcaption>
+        Higher School of Economics<br>Moscow<br>2021-2026<br>Bachelor of Arts - Design
+        </figcaption>
+    </figure>
+        </div>
+            <div class="column">
+            <figure>
+        <img src="assets/itransition.png"  style="width: 250px; height: 250px" alt="">
+        <figcaption>
+        Itransition Group<br>United Kingdom, remote<br>2023<br>DevOps Internship
+        </figcaption>
+    </figure>
+            </div>
+</div>
+</body>
+</html>
