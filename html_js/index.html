@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Ignat Strelets</title>
+    <link id='favicon' rel="shortcut icon" href="./assets/favicon.ico" type="image/x-png">
+</head>
+<style>
+    li {
+        display: inline;
+        float: left;
+        padding: 14px 16px;
+    }
+    .active {
+        text-decoration-color: chocolate;
+    }
+    figure {
+        float: right;
+        position: relative;
+    }
+</style>
+<body>
+    <header>
+        <ul>
+            <li><a class="active"  href="index.html">Personal info</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li style="float:right"><a href="https://www.linkedin.com/in/ignat-strelets-568685259/">LinkedIn</a></li>
+            <li style="float:right"><a href="https://www.t.me/ignatstrelets">Telegram</a></li>
+            <li style="float:right"><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <br>
+        <br>
+        <br>
+        <div>
+            <figure>
+                <a href="assets/gopher2-1_400x600.png" target="_blank"><img src="assets/gopher2-1.webp" style="width:100px;height:150px;" alt=""></a>
+                <figcaption>Gopher<br>Go Programming Language<br>Copyright : Renee French</figcaption>
+            </figure>
+        </div>
+        <div>
+            <h2>Hello,<br> I am Ignat Strelets</h2>
+        </div>
+        <br>
+        <div>
+            <h3>Open to new projects <br></h3>
+            <br>
+            <p>Go Developer, interested in DevOps and Cloud Engineering, Infrastructure Engineering.<br>Previously worked as a broadcasting audio&video technician.</p>
+        </div>
+    </section>
+    <section>
+        <hr>
+      <h3>You can place your offer on further partnership here</h3>
+        <form>
+            <fieldset>
+                <legend>Your offer:</legend>
+            <label for="Name">Your name or name of an organization you are representing:</label><br>
+            <input type="text" id="fname" name="fname" ><br><br>
+            <label for="Task">Description of your offer:</label><br>
+            <textarea for="Task" name="task" style="width:600px; height:200px;" ></textarea><br><br>
+            <label for="topic">What is a vector of our further partnership:</label>
+            <select id="topic" name="topic">
+                <option value="Devops">DevOps or Infrastructure Engineering</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Software Architecture">Software Architecture</option>
+                <option value="Platform Engineering">Platform Engineering</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+    <br>
+    <section id="contact">
+        <hr>
+        <h3>Otherwise, you can leave your contact information here</h3>
+        <form >
+            <fieldset>
+
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="org">Organization:</label><br>
+                <input type="text" id="org" name="org"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="tel">Phone number:</label><br>
+                <input type="text" id="tel" name="tel"><br>
+                <input type="hidden" name="timeStampID" id='timeStamp' />
+                <br> <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+</body>
+<script>
+    var today = new Date();
+    var dd = (today.getDate()).toString();
+    var mm = (today.getMonth()+1).toString();
+    var yy = (today.getFullYear()-2000).toString();
+    if(dd<10)
+    {
+        dd='0'+dd;
+    }
+    if(mm<10)
+    {
+        mm='0'+mm;
+    }
+    today = yy+mm+dd;
+
+
+    document.getElementById('timeStamp').value= today ;
+</script>
+</html>
